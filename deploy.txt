@@ -1,0 +1,2 @@
+PARA SUBIR APP NO HEROKU RODAR O COMANDO A SEGUIR
+git push heroku master
