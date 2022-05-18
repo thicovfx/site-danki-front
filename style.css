@@ -26,7 +26,10 @@ section.main{
     width: 100%;
 }
 
-.logo-menu{width: 50%;}
+.logo-menu{
+    width: 50%;
+    margin-left: 20px;
+}
 
 .logo-menu img{max-width: 200px;}
 
@@ -278,7 +281,7 @@ margin-bottom: 40px;
     
 }
 
-/* Form */
+/* FORM */
 
 section.contato{
     padding: 40px 0;
@@ -316,14 +319,15 @@ section.contato form{
     border: 1px solid #C3CCE8;
 }
 
-.contato input[type=submit]
-{
+.contato input[type=submit]{
     width: 100%;
     height: 50px;
     border-radius: 10px;
     margin: 10px 0;
-    padding-left: 10px;
-    background: #255AFF 
+    display: block;
+    padding: 10px;
+    background: #255AFF; 
+    color: white;
 }
 
 .contato > .center{
@@ -332,6 +336,35 @@ section.contato form{
     align-items: center;
     margin: 0 auto;
     flex-wrap: wrap;
+}
+
+.menu-links-mobile{
+    display: none;
+    width: 50%;
+    text-align: right;
+}
+
+.menu-links-mobile i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #0F3FD3;
+    padding: 10px 0;
+    color: white;
+}
+
+footer .text-footer{
+    width: 50%;
+    padding: 30px 0;
+}
+
+footer .menu-links a{
+    padding: 25px;
 }
 
 /* SLICK SLIDER */
@@ -388,12 +421,20 @@ li.slick-active button{
 .slick-slide:focus { outline: none; }
 
 
-
-
-
 /* RESPONSIVE */
 
 @media screen and (max-width: 768px){
+
+    .menu-links-mobile{
+        display: block;
+        padding: 15px 0;
+        margin-right: 20px;
+    }
+
+    .menu .menu-links{
+        display: none;
+    }
+
     .box-diferenciais{
         width: 100%;
         margin-right: 0;
@@ -427,6 +468,23 @@ li.slick-active button{
 
     .img-beneficios{
         width: 100%;
+    }
+
+    footer .text-footer{
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    footer .menu-links{
+        padding: 25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .menu-links a{
+        text-align: center;
+        display: block;
     }
 }
 
